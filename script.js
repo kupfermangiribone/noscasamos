@@ -10,21 +10,4 @@ document.addEventListener("DOMContentLoaded", function() {
         // Calcula días, horas, minutos y segundos
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Muestra el resultado en el elemento con id="countdown"
-        const countdownElement = document.getElementById("countdown");
-        if (countdownElement) {
-            countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        }
-
-        // Cuando la cuenta regresiva termina
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            if (countdownElement) {
-                countdownElement.innerHTML = "¡Ya nos casamos!";
-            }
-        }
-    }, 1000);
-});
+        const minutes
