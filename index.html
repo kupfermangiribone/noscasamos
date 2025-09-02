@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pili & Maxi - ¡Nos casamos!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Pili & Maxi</h1>
+            <p class="subtitle">¡Nos casamos!</p>
+            <div id="countdown" class="countdown-timer"></div>
+            <a href="#details" class="cta-button">Ver los detalles</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="details" class="details-section">
+            <div class="container">
+                <h2>El gran día</h2>
+                <div class="event-info">
+                    <div class="event-block">
+                        <h3>Ceremonia</h3>
+                        <p><strong>Fecha:</strong> 1 de Noviembre, 2025</p>
+                        <p><strong>Hora:</strong> 17:00 hs</p>
+                        <p><strong>Lugar:</strong> Iglesia [Nombre de la Iglesia]</p>
+                        <p><strong>Dirección:</strong> [Dirección de la Iglesia]</p>
+                    </div>
+                    <div class="event-block">
+                        <h3>Fiesta</h3>
+                        <p><strong>Hora:</strong> 20:00 hs</p>
+                        <p><strong>Lugar:</strong> Salón [Nombre del Salón]</p>
+                        <p><strong>Dirección:</strong> [Dirección del Salón]</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.144414163013!2d-58.423019084804155!3d-34.59972358045717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4m5!3s0x95bccb4438b0e8c1%3A0x6b42b8f8a84a6b25!4sObelisco%2C%20Av.%20Corrientes%2C%20C1043%20CABA!5e0!3m2!1sen!2sar!4v1612803157582!5m2!1sen!2sar" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="gifts" class="gifts-section">
+            <div class="container">
+                <h2>Regalos</h2>
+                <p>Lo más importante es tu presencia, ¡pero si deseas hacernos un regalo, puedes hacerlo de estas maneras!</p>
+                <div class="gift-options">
+                    <div class="gift-block">
+                        <h3>Alias bancario</h3>
+                        <p><strong>Alias:</strong> Pili.y.Maxi.se.casan</p>
+                    </div>
+                    <div class="gift-block">
+                        <h3>Lista de regalos</h3>
+                        <p>Visita nuestra lista en [Nombre de la tienda]:</p>
+                        <a href="#" target="_blank" class="gift-link">Ir a la lista</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" class="rsvp-section">
+            <div class="container">
+                <h2>Confirma tu asistencia</h2>
+                <p>¡Ayúdanos a organizar todo! Por favor, confirma tu asistencia antes del 15 de octubre, 2025.</p>
+                <form id="rsvp-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <select name="asistencia" required>
+                        <option value="">¿Confirmas tu asistencia?</option>
+                        <option value="si">Sí, asistiré</option>
+                        <option value="no">No podré asistir</option>
+                    </select>
+                    <textarea name="mensaje" placeholder="Déjanos un mensaje (opcional)"></textarea>
+                    <button type="submit">Enviar confirmación</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pili & Maxi. Hecho con ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
